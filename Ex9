@@ -1,0 +1,4 @@
+print("Vamos converter a temperatura de Fahreinheit para Celsius?")
+F=float(input("Digite a temperatura em Fahrenheit: "))
+C:float=5*((F-32)/9)
+print("A temperatura em", F, " Fahrenheit equivale à %.2f" % C, "Celsius")
