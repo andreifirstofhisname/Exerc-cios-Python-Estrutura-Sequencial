@@ -1,0 +1,6 @@
+print("Vamos calcular a àrea de um quadrado?")
+lateral=float(input("Por favor, digite a lateral do quadrado: "))
+area=lateral**2
+print("A área do quadrado é:", area)
+dobro=area*2
+print("Mas se multiplicarmos a área do quadrado por 2 temos:", dobro)
