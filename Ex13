@@ -1,0 +1,11 @@
+sexo=str(input("Me diga seu sexo (macho ou fêmea): "))
+h=float(input("Por favor, agora me diga sua altura: "))
+
+if sexo=='macho':
+    pesoIdeal=(72.7*h)-58
+    print("Seu peso ideal é: %.2f" % pesoIdeal)
+elif sexo=='fêmea':
+    pesoIdeal=(62.1*h)-44.7
+    print("Seu peso ideal é: %.2f" % pesoIdeal)
+else:
+    print("Por favor, escolha apenas entre macho e fêmea! o.o")
