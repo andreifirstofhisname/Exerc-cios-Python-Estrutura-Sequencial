@@ -1,0 +1,4 @@
+tamanhoArquivo=float(input("Por favor, digite o tamanho do arquivo em MB: "))
+velocidadeDownload=float(input("Agora, digite a sua velocidade de download em Mbps: "))
+tempoDownload=tamanhoArquivo/velocidadeDownload
+print("Seu download demorará %.2f" % tempoDownload, " minutos!")
