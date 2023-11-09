@@ -1,0 +1,4 @@
+num1=int(input("Por favor, digite o primeiro número: "))
+num2=int(input("Por favor, digite o segundo número: "))
+
+print(num1,"+",num2,"=", num1+num2)
