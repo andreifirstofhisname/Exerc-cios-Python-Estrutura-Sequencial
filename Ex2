@@ -1,0 +1,2 @@
+num = int(input("Por favor, digite um número: "))
+print("O número que você escolheu foi o",num)
