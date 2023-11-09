@@ -1,10 +1,13 @@
-h=float(input("Me diga a altura da parede a ser pintada em m: "))
-l=float(input("Agora, me diga a largura da parede a ser pintada em m: "))
-area=h*l
-litro=area/3
-lata=litro/18
-valorTotal=lata*80
+valorHora=float(input("Por favor, digite o quanto você ganha por hora trabalhada, em R$: "))
+horasMensais=int(input("Qauntas horas você trabalhou esse mês? "))
+salarioBruto=valorHora*horasMensais
+iRenda=salarioBruto*0.11
+inss=salarioBruto*0.08
+sindicato=salarioBruto*0.05
+salarioLiquido=salarioBruto-iRenda-inss-sindicato
 
-print("A área total da parede a ser pintada é de: %.1f" % area + " metros")
-print("A quantidade de latas necessárias para para pintar a parede é %.2f" % lata)
-print("Ou seja, o valor total para comprar as latas é de R$ %.2f" % valorTotal)
+print("Nossa, você ganha: R$ %.2f" % salarioBruto)
+print("Infelizmente o Leão vai tomar R$ %.2f" % iRenda + " de imposto!")
+print("Você também precisa pagar R$ %.2f " % inss + " de INSS! D:")
+print("E o sindicato vai tomar R$ %.2f" % sindicato + " do seu salário!")
+print("No final você vai ficar apenas com R$ %.2f" % salarioLiquido + " pra pagar suas contas! u.u")
