@@ -1,0 +1,3 @@
+valor=float(input("Por favor, me diga quanto você ganha por hora: "))
+horas=float(input("Por favor, agora me diga quantas horas você trabalhou esse mês: "))
+salario=valor*horas
