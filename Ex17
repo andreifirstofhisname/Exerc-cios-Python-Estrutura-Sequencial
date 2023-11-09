@@ -1,0 +1,25 @@
+h=float(input("Me diga a altura da parede a ser pintada em m: "))
+l=float(input("Agora, me diga a largura da parede a ser pintada em m: "))
+area=h*l
+litro=area/6
+print("A área total da parede a ser pintada é de: %.1f" % area + " metros")
+
+lata=(litro+litro*0.1)/18
+valorLata=int(lata)*80 if lata<1 else (int(lata+1))*80
+print("A quantidade de latas necessárias para para pintar a parede é %.2f" % lata)
+print("Ou seja, o valor total para comprar as latas é de R$ %.2f" % valorLata)
+
+galao=(litro+litro*0.1)/3.6
+valorGalao=int(galao)*25 if galao<1 else (int(galao)+1)*25
+print("A quantidade de galões necessários para para pintar a parede é %.2f" % galao)
+print("Ou seja, o valor total para comprar os galões é de R$ %.2f" % valorGalao)
+
+misturaLata=int((litro+litro*0.1)/18.0)
+misturaGalao=int((litro-(misturaLata * 18)) / 3.6)
+
+if litro-(misturaLata * 18) % 3.6 != 0:
+    misturaGalao+=1
+valorMistura=(misturaLata * 80) + (misturaGalao * 25)
+
+print("Mistura: %d latas e %d galoes" % (misturaLata, misturaGalao))
+print("O valor total da mistura seria: %.2f" % valorMistura)
