@@ -1,0 +1,10 @@
+n1=int(input("Por favor, digite um número inteiro: "))
+n2=int(input("Por favor, digite mais um número inteiro: "))
+n3=float(input("Agora, digite um número real, por favor: "))
+print("Agora, vamos mostrar algumas continhas! :D")
+a=(n1*2)*(n2/2)
+b=(n1*1)+n3
+c=n3**3
+print("O produto do dobro do primeiro com metade do segundo é igual à: ", a)
+print("A soma do triplo do primeiro com o terceiro é igual à: ", b)
+print("O terceiro elevado ao cubo é igual à: ", c)
