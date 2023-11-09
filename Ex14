@@ -1,0 +1,8 @@
+pesoPeixes=float(input("Diga quantos quilos de peixe você pescou hoje: "))
+
+if pesoPeixes>50:
+    excesso=pesoPeixes-50
+    tributo=excesso*4
+    print("Você terá que pagar R$ %.2f" % tributo + " de tributo! u.u")
+else:
+    print("Você não precisa pagar tributos! :D")
