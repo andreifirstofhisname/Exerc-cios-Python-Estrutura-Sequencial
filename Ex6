@@ -1,0 +1,6 @@
+print("Vamos calcular a àrea de um círculo? :)")
+raio=float(input("Por favor, digite o raio do círculo: "))
+pi=3.14
+area=pi*raio**2
+
+print("A área do círculo é: %.2f" % area)
